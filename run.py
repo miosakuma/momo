@@ -253,7 +253,7 @@ def install_deps(
             }
             install_cuda_windows(**install_cuda_args)
 
-        # Intel oneVPL
+        # Intel VPL
         if platform.target.os in ("windows", "ubuntu") and platform.target.arch == "x86_64":
             install_vpl_args = {
                 "version": version["VPL_VERSION"],
@@ -349,7 +349,7 @@ def install_deps(
             "version_file": os.path.join(install_dir, "openh264.version"),
             "source_dir": source_dir,
             "install_dir": install_dir,
-            "is_windows": platform.target.os == 'windows',
+            "is_windows": platform.target.os == "windows",
         }
         install_openh264(**install_openh264_args)
 

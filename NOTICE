@@ -23,7 +23,7 @@ misrepresented as being the original software.
 
 # Boost C++ Libraries
 
-https://www.boost.org/LICENSE_1_0.txt
+<https://www.boost.org/LICENSE_1_0.txt>
 
 ```
 Boost Software License - Version 1.0 - August 17th, 2003
@@ -53,7 +53,7 @@ DEALINGS IN THE SOFTWARE.
 
 # Broadcom / Raspberry Pi
 
-https://github.com/raspberrypi/firmware/blob/master/boot/LICENCE.broadcom
+<https://github.com/raspberrypi/firmware/blob/master/boot/LICENCE.broadcom>
 
 ```
 Copyright (c) 2006, Broadcom Corporation.
@@ -88,6 +88,7 @@ DAMAGE.
 ```
 
 # webrtc
+
 ```
 Copyright (c) 2011, The WebRTC project authors. All rights reserved.
 
@@ -121,8 +122,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ```
 
-
 # abseil-cpp
+
 ```
 
                                  Apache License
@@ -329,6 +330,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # base64
+
 ```
 //*********************************************************************
 //* Base64 - a simple base64 encoder and decoder.
@@ -348,6 +350,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # boringssl
+
 ```
 BoringSSL is a fork of OpenSSL. As such, large parts of it fall under OpenSSL
 licensing. Files that are completely new have a Google copyright and an ISC
@@ -604,6 +607,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # fft
+
 ```
 /*
  * Copyright(c)1995,97 Mark Olesen &lt;olesen@me.QueensU.CA&gt;
@@ -634,6 +638,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # fft4g
+
 ```
 /*
  * http://www.kurims.kyoto-u.ac.jp/~ooura/fft.html
@@ -647,6 +652,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # fiat
+
 ```
 The MIT License (MIT)
 
@@ -674,6 +680,7 @@ SOFTWARE.
 ```
 
 # g711
+
 ```
 /*
  * SpanDSP - a series of DSP components for telephony
@@ -693,6 +700,7 @@ SOFTWARE.
 ```
 
 # g722
+
 ```
 /*
  * SpanDSP - a series of DSP components for telephony
@@ -718,6 +726,7 @@ SOFTWARE.
 ```
 
 # libsrtp
+
 ```
 /*
  *
@@ -758,6 +767,7 @@ SOFTWARE.
 ```
 
 # libvpx
+
 ```
 Copyright (c) 2010, The WebM Project authors. All rights reserved.
 
@@ -794,6 +804,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # libyuv
+
 ```
 Copyright 2011 The LibYuv Project Authors. All rights reserved.
 
@@ -828,6 +839,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # opus
+
 ```
 Copyright 2001-2011 Xiph.Org, Skype Limited, Octasic,
                     Jean-Marc Valin, Timothy B. Terriberry,
@@ -877,6 +889,7 @@ https://datatracker.ietf.org/ipr/1526/
 ```
 
 # protobuf
+
 ```
 Copyright 2008 Google Inc.  All rights reserved.
 
@@ -914,6 +927,7 @@ support library is itself covered by the above license.
 ```
 
 # rnnoise
+
 ```
 Copyright (c) 2017, Mozilla
 Copyright (c) 2007-2017, Jean-Marc Valin
@@ -950,6 +964,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # sigslot
+
 ```
 // sigslot.h: Signal/Slot classes
 //
@@ -962,6 +977,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # spl_sqrt_floor
+
 ```
 /*
  * Written by Wilco Dijkstra, 1996. The following email exchange establishes the
@@ -994,6 +1010,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 # usrsctp
+
 ```
 (Copied from the COPYRIGHT file of
 https://code.google.com/p/sctp-refimpl/source/browse/trunk/COPYRIGHT)
@@ -1029,6 +1046,7 @@ SUCH DAMAGE.
 ```
 
 # zlib
+
 ```
 version 1.2.11, January 15th, 2017
 
@@ -1083,7 +1101,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 ## NvDecoder / NvEncoder
 
-https://developer.nvidia.com/nvidia-video-codec-sdk-license-agreement
+<https://developer.nvidia.com/nvidia-video-codec-sdk-license-agreement>
 
 ```
 NVIDIA VIDEO CODEC SDK LICENSE AGREEMENT (“Agreement”)
@@ -1301,9 +1319,9 @@ violation of the foregoing will be null and void.   The terms of this Agreement
 shall be binding upon assignees.
 ```
 
-## oneVPL
+## Intel® Video Processing Library (Intel® VPL)
 
-https://github.com/intel/libvpl
+<https://github.com/intel/libvpl>
 
 ```
 MIT License
@@ -1331,7 +1349,7 @@ SOFTWARE.
 
 # OpenH264
 
-https://github.com/cisco/openh264
+<https://github.com/cisco/openh264>
 
 ```
 Copyright (c) 2013, Cisco Systems
