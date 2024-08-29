@@ -21,7 +21,7 @@ ws.onopen = onWsOpen.bind();
 ws.onerror = onWsError.bind();
 ws.onmessage = onWsMessage.bind();
 
-function onWsError(error){
+function onWsError(error) {
   console.error('ws onerror() ERROR:', error);
 }
 
@@ -167,13 +167,13 @@ function prepareNewConnection() {
         break;
     }
   };
-  peer.addTransceiver('video', {direction: 'recvonly'});
-  peer.addTransceiver('audio', {direction: 'recvonly'});
+  peer.addTransceiver('video', { direction: 'recvonly' });
+  peer.addTransceiver('audio', { direction: 'recvonly' });
 
   dataChannel.onmessage = function (event) {
     console.log("Got Data Channel Message:", new TextDecoder().decode(event.data));
   };
-  
+
   return peer;
 }
 
@@ -182,19 +182,19 @@ function browser() {
   if (ua.indexOf('edge') !== -1) {
     return 'edge';
   }
-  else if (ua.indexOf('chrome')  !== -1 && ua.indexOf('edge') === -1) {
+  else if (ua.indexOf('chrome') !== -1 && ua.indexOf('edge') === -1) {
     return 'chrome';
   }
-  else if (ua.indexOf('safari')  !== -1 && ua.indexOf('chrome') === -1) {
+  else if (ua.indexOf('safari') !== -1 && ua.indexOf('chrome') === -1) {
     return 'safari';
   }
-  else if (ua.indexOf('opera')   !== -1) {
+  else if (ua.indexOf('opera') !== -1) {
     return 'opera';
   }
   else if (ua.indexOf('firefox') !== -1) {
     return 'firefox';
   }
-  return ;
+  return;
 }
 
 function isSafari() {
@@ -221,21 +221,31 @@ async function makeOffer() {
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'VP8');
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'VP9');
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'AV1');
+        sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'H265');
         break;
       case 'VP8':
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'H264');
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'VP9');
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'AV1');
+        sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'H265');
         break;
       case 'VP9':
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'H264');
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'VP8');
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'AV1');
+        sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'H265');
         break;
       case 'AV1':
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'H264');
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'VP8');
         sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'VP9');
+        sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'H265');
+        break;
+      case 'H265':
+        sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'VP8');
+        sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'VP9');
+        sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'AV1');
+        sessionDescription.sdp = removeCodec(sessionDescription.sdp, 'H264');
         break;
     }
     await peerConnection.setLocalDescription(sessionDescription);
@@ -271,11 +281,11 @@ function setOffer(sessionDescription) {
   }
   const peerConnection = prepareNewConnection();
   peerConnection.onnegotiationneeded = async function () {
-    try{
+    try {
       await peerConnection.setRemoteDescription(sessionDescription);
       console.log('setRemoteDescription(offer) success in promise');
       makeAnswer();
-    }catch(error) {
+    } catch (error) {
       console.error('setRemoteDescription(offer) ERROR: ', error);
     }
   }
@@ -290,7 +300,7 @@ async function setAnswer(sessionDescription) {
     await peerConnection.setRemoteDescription(sessionDescription);
     console.log('setRemoteDescription(answer) success in promise');
     drainCandidate();
-  } catch(error) {
+  } catch (error) {
     console.error('setRemoteDescription(answer) ERROR: ', error);
   }
 }
